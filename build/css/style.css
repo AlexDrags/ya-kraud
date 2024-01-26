@@ -1599,6 +1599,13 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header_wrapper {
+    background: no-repeat center 113% url("../img/bg-mobile.png");
+    min-height: 750px;
+  }
+}
+
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
