@@ -17,7 +17,10 @@
 
 // Blocks
 // ---------------------------------
-
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/intro";
+@import "blocks/stroke";
 @import "blocks/btn";
 @import "blocks/modal";
 @import "blocks/custom-input";

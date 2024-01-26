@@ -1,10 +1,15 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  border-radius: 35px;
+  min-width: 260px;
+  max-height: 70px;
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  //background-color: $color-neon-blue;
   border: none;
   cursor: pointer;
 
@@ -22,5 +27,39 @@
 
   @include hover-focus {
     opacity: 0.8;
+  }
+
+  @media (max-width: 376px) {
+    max-height: 47px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.btn--accept {
+  background-color: #000000;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #fbce51;
+    color: #000000;
+  }
+}
+
+.btn--info {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #1f1f1f;
+
+  &:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  @media (max-width: 376px) {
+    background-color: #ffffff;
+    border: none;
   }
 }

@@ -1,0 +1,16 @@
+.stroke {
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #f54932;
+  color: #ffffff;
+
+  @media (max-width: 376px) {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    max-height: 38px;
+  }
+}

@@ -1,0 +1,17 @@
+.header {
+  background: repeat url("/img/phone.png");
+}
+
+.header_wrapper {
+  background: no-repeat center url("/img/bg-full.png");
+  min-height: 700px;
+  background-position-x: 8px;
+  @media (max-width: 1367px) {
+    background-position-x: -121px;
+  }
+
+  @media (max-width: 376px) {
+    background: no-repeat center 113% url("/img/bg-mobile.png");
+    min-height: 750px;
+  }
+}

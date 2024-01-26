@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &__img-wrapper {
+    display: flex;
+
+    & img {
+      @media (max-width: 376px) {
+        width: 18px;
+        height: 27px;
+      }
+    }
+
+    @media (max-width: 376px) {
+      gap: 2px;
+    }
+  }
+
+  & p {
+    font-family: "Golos Text", sans-serif;
+
+    @media (max-width: 376px) {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  @media (max-width: 1367px) {
+    gap: 5px;
+  }
+
+  @media (max-width: 376px) {
+    gap: 10px;
+  }
+}
